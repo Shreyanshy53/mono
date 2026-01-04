@@ -15,7 +15,7 @@ source_city = input("Enter source city: ")
 city_data = data[data["City"].str.lower() == source_city.lower()].copy()
 
 if city_data.empty:
-    print("Is city ke liye data nahi mila")
+    print("Data is not present for this particular City")
 else:
     # Score calculation
     city_data.loc[:, "Score"] = (
